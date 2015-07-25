@@ -23,3 +23,7 @@ To make it easier to work with NewUp, consider adding the directory you installe
 ## Configuration
 
 NewUp contains a few settings that can be configured. Locate the `config\configuration.php` file and examine the various configuration items that are available to you.
+
+## General Usage
+
+This section isn't quite ready yet as there is still some work to be done on the core utilities. Everything is getting close though!
