@@ -793,7 +793,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/newup/core/zipball/8c58943d0dff1f40e7316b42bf921e9295c7e86a",
+                "url": "https://api.github.com/repos/newup/core/zipball/189d3d4c0fb5bb41af4c218260fb3082d0332d5e",
                 "reference": "8c58943d0dff1f40e7316b42bf921e9295c7e86a",
                 "shasum": ""
             },
