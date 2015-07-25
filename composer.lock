@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fda54bd89f666ed0e5e4891b146810c5",
+    "hash": "b843cbeb9a174051ffc4fbc4856e0ac6",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -789,16 +789,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/newup/core.git",
-                "reference": "8c58943d0dff1f40e7316b42bf921e9295c7e86a"
+                "reference": "189d3d4c0fb5bb41af4c218260fb3082d0332d5e"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/newup/core/zipball/189d3d4c0fb5bb41af4c218260fb3082d0332d5e",
-                "reference": "8c58943d0dff1f40e7316b42bf921e9295c7e86a",
+                "reference": "189d3d4c0fb5bb41af4c218260fb3082d0332d5e",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "5.*",
+                "laravel/framework": "5.0.*",
                 "symfony/yaml": "2.6.*",
                 "twig/twig": "~1.0"
             },
@@ -830,7 +830,7 @@
             ],
             "description": "PHP Package Generator (core framework)",
             "homepage": "http://newup.io",
-            "time": "2015-07-25 04:09:25"
+            "time": "2015-07-25 05:18:11"
         },
         {
             "name": "nikic/php-parser",
