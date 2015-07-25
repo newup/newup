@@ -18,6 +18,8 @@ composer create-project newup/newup .
 
 Composer will take just a moment to install of the dependencies required for NewUp to work correctly.
 
+To make it easier to work with NewUp, consider adding the directory you installed NewUp in to your `PATH`.
+
 ## Configuration
 
 NewUp contains a few settings that can be configured. Locate the `config\configuration.php` file and examine the various configuration items that are available to you.
