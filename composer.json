@@ -1,0 +1,20 @@
+{
+  "name": "newup/newup",
+  "description": "PHP Package Generator Command Line Utility",
+  "license": "MIT",
+  "homepage": "http://newup.io",
+  "support": {
+    "issues": "https://github.com/newup/newup/issues",
+    "source": "https://github.com/newup/newup"
+  },
+  "authors": [
+    {
+      "name": "Johnathon Koster",
+      "email": "john@stillat.com"
+    }
+  ],
+  "require": {
+    "newup/core": "dev-master"
+  },
+  "bin": ["newup"]
+}
