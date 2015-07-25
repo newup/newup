@@ -16,8 +16,5 @@
   "require": {
     "newup/core": "*"
   },
-  "bin": ["newup"],
-  "config": {
-    "vendor-dir": "newup_vendor"
-  }
+  "bin": ["newup"]
 }

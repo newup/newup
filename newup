@@ -12,7 +12,7 @@
 | to find Composer's auto-loader.
 |
 */
-define('NEWUP_LOADER_PATH', __DIR__.'/newup_vendor/autoload.php');
+define('NEWUP_LOADER_PATH', __DIR__.'/vendor/autoload.php');
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ define('NEWUP_UTILITY_PATH', __DIR__);
 | Composer updates, even if it seems like a hack.
 |
 */
-define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', __DIR__.'/newup_vendor/newup/core/config/user/');
+define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', __DIR__.'/vendor/newup/core/config/user/');
 define('NEWUP_UTILITY_USER_CONFIGURATION_DIRECTORY', __DIR__.'/config/');
 
 foreach (glob(NEWUP_UTILITY_USER_CONFIGURATION_DIRECTORY.'*.php') as $configurationFile) {
@@ -61,4 +61,4 @@ foreach (glob(NEWUP_UTILITY_USER_CONFIGURATION_DIRECTORY.'*.php') as $configurat
 | all the commands in this utility. Sneaky.
 |
 */
-return include __DIR__.'/newup_vendor/newup/core/newup.php';
+return include __DIR__.'/vendor/newup/core/newup.php';
