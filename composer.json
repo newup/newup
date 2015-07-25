@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "newup/core": "dev-master"
+    "newup/core": "*"
   },
   "bin": ["newup"]
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fb0f212f60dc2b75fe93fa9e1fd3b2c4",
+    "hash": "fda54bd89f666ed0e5e4891b146810c5",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -785,7 +785,7 @@
         },
         {
             "name": "newup/core",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/newup/core.git",
@@ -1906,9 +1906,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "newup/core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
