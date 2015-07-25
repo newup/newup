@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "newup/core": "0.*"
+    "newup/core": "*"
   },
   "bin": ["newup"],
   "config": {
