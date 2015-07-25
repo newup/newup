@@ -14,7 +14,7 @@ return [
     */
     'authors' => [
         [
-            'name'  => 'Your Name',
+            'name' => 'Your Name',
             'email' => 'Your email'
         ]
     ],
