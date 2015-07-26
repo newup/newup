@@ -10,13 +10,13 @@ NewUp is a command line utility that makes creating packages quick, easy and uni
 
 ## Installation With Composer
 
-NewUp is installed using [Composer](https://getcomposer.org/). There is no other installation option as Composer is required to use NewUp. To install NewUp, decide which directory you want to install NewUp in and run the following command from that directory:
+NewUp is installed using [Composer](https://getcomposer.org/). This is the easiest installation option as Composer is required to use NewUp. To install NewUp, decide which directory you want to install NewUp in and run the following command from that directory:
 
 ~~~
 composer create-project newup/newup .
 ~~~
 
-Composer will take just a moment to install of the dependencies required for NewUp to work correctly.
+Composer will take just a moment to install all of the dependencies required for NewUp to work correctly.
 
 To make it easier to work with NewUp, consider adding the directory you installed NewUp in to your `PATH`.
 
