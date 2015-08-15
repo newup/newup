@@ -47,4 +47,17 @@ return [
     */
     'strictComposerValues' => true,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Utility Commands
+    |--------------------------------------------------------------------------
+    |
+    | By default, there are some more advanced commands that are not
+    | visible in the commands list. For example, one command allows
+    | users to clean up the template storage directory. To enable
+    | these commands, set the following option to `true`.
+    |
+    */
+    'enableUtilityCommands' => false,
+
 ];
