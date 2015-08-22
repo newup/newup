@@ -3,6 +3,7 @@
   "description": "PHP Package Generator Command Line Utility",
   "license": "MIT",
   "homepage": "http://newup.io",
+  "type": "project",
   "support": {
     "issues": "https://github.com/newup/newup/issues",
     "source": "https://github.com/newup/newup"
