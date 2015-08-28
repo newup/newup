@@ -20,6 +20,16 @@ Composer will take just a moment to install all of the dependencies required for
 
 To make it easier to work with NewUp, consider adding the directory you installed NewUp in to your `PATH`.
 
+## Global Installation With Composer
+
+NewUp can be installed globally using [Composer](https://getcomposer.org/). To do this, issue the following command:
+
+~~~
+composer global require newup/newup
+~~~
+
+When NewUp is globally installed, it might be easier to move the configuration directory location to somewhere else on the system. To do this, copy the contents of the `config` directory and create a new environment variable named `NEWUP_CONFIGURATION` with the path to the configuration directory as the value.
+
 ## Configuration
 
 NewUp contains a few settings that can be configured. Locate the `config\configuration.php` file and examine the various configuration items that are available to you.
