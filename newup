@@ -12,7 +12,21 @@
 | to find Composer's auto-loader.
 |
 */
-define('NEWUP_LOADER_PATH', __DIR__.'/vendor/autoload.php');
+$newUpLoaderPath = '';
+$newUpCorePath = '';
+
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    // This will handle NewUp installations using composer create-project.
+    $newUpLoaderPath = __DIR__ . '/vendor/autoload.php';
+    $newUpCorePath   = __DIR__ . '/vendor/newup/core/newup.php';
+} elseif (file_exists(__DIR__ . '../../../autoload.php')) {
+    // This will handle NewUp installations using composer require global.
+    $newUpLoaderPath = __DIR__ . '../../../autoload.php';
+    $newUpCorePath   = __DIR__ . '../../core/newup.php';
+}
+
+define('NEWUP_LOADER_PATH', $newUpLoaderPath);
+define('NEWUP_CORE_PATH', $newUpCorePath);
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +45,9 @@ $userConfigurationPath = '';
 if (getenv('NEWUP_CONFIGURATION') !== false) {
     // Allow a user to set the configuration path using a system variable.
     $userConfigurationPath = getenv('NEWUP_CONFIGURATION');
-} elseif (file_exists(__DIR__.'/config')) {
+} elseif (file_exists(__DIR__ . '/config')) {
     // This file will be present if running NewUp directly.
-    $userConfigurationPath = __DIR__.'/config';
+    $userConfigurationPath = __DIR__ . '/config';
 }
 
 define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', $userConfigurationPath);
@@ -49,4 +63,4 @@ define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', $userConfigurationPath);
 | all the commands in this utility. Sneaky.
 |
 */
-return include __DIR__.'/vendor/newup/core/newup.php';
+return include NEWUP_CORE_PATH;
