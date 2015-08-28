@@ -26,29 +26,17 @@ define('NEWUP_LOADER_PATH', __DIR__.'/vendor/autoload.php');
 */
 define('NEWUP_UTILITY_PATH', __DIR__);
 
+$userConfigurationPath = '';
 
-/*
-|--------------------------------------------------------------------------
-| Copy The User Configuration Files
-|--------------------------------------------------------------------------
-|
-| The NewUp core utility allows end-users to configure various
-| behavioral aspects using configuration files. However, we
-| need to copy the contents of the 'config' directory to
-| the utilities user configuration directory. This will
-| allow all the changes to stay in sync even between
-| Composer updates, even if it seems like a hack.
-|
-*/
-define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', __DIR__.'/vendor/newup/core/config/user/');
-define('NEWUP_UTILITY_USER_CONFIGURATION_DIRECTORY', __DIR__.'/config/');
-
-foreach (glob(NEWUP_UTILITY_USER_CONFIGURATION_DIRECTORY.'*.php') as $configurationFile) {
-    if (!is_dir($configurationFile) && is_readable($configurationFile)) {
-        $utilityPath = NEWUP_CORE_USER_CONFIGURATION_DIRECTORY.DIRECTORY_SEPARATOR.basename($configurationFile);
-        copy($configurationFile, $utilityPath);
-    }
+if (getenv('NEWUP_CONFIGURATION') !== false) {
+    // Allow a user to set the configuration path using a system variable.
+    $userConfigurationPath = getenv('NEWUP_CONFIGURATION');
+} elseif (file_exists(__DIR__.'/config')) {
+    // This file will be present if running NewUp directly.
+    $userConfigurationPath = __DIR__.'/config';
 }
+
+define('NEWUP_CORE_USER_CONFIGURATION_DIRECTORY', $userConfigurationPath);
 
 /*
 |--------------------------------------------------------------------------
